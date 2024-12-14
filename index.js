@@ -25,6 +25,10 @@ try {
     console.log(error);
 }
 
+app.get('/',(req, res)=>{
+    res.send('Server in working')
+})
+
 //routes
 app.use("/api/user", userRoute);
 app.use("/api/message", messageRoute);
